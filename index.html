@@ -1,0 +1,359 @@
+<!-- ================================================================
+Ce site a été réalisé à l'aide de connaissances personnelles et 
+non professionnelles en développement web.
+================================================================== -->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Emmy Lamblin-Durosset">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <title>Emmy Lamblin-Durosset</title>
+
+  <link rel="stylesheet" href="assets/css/base.css">         
+  <link rel="stylesheet" href="assets/css/index.css">        
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- ECRAN D'INTRODUCTION -->
+<div id="intro-overlay">
+  <div class="intro-content">
+    <h1 id="intro-word">Créative</h1>
+    <div class="progress-bar"></div>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<header class="header">
+  <div class="navbar">
+    <button class="burger" aria-label="Menu mobile" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="logo-container">
+      <span class="logo">Emmy Lamblin-Durosset</span>
+    </div>
+    <nav class="nav-links" role="navigation">
+      <a href="#accueil" class="active" id="link-accueil">Accueil</a>
+      <a href="#qui-suis-je" id="link-quisuisje">Qui suis-je ?</a>
+      <div class="dropdown desktop-only">
+        <a href="#portfolio" id="portfolio-link-desktop">Portfolio ▾</a>
+        <div class="dropdown-content">
+          <a href="#podcast" id="link-podcast">Podcast</a>
+          <a href="#photographies" id="link-photographies">Photographies</a>
+        </div>
+      </div>
+      <div class="mobile-only portfolio-mobile">
+        <a href="#portfolio" class="portfolio-title" id="portfolio-link-mobile">Portfolio ▾</a>
+        <a href="#podcast" class="sub-link" id="link-podcast-mobile">Podcast</a>
+        <a href="#photographies" class="sub-link" id="link-photographies-mobile">Photographies</a>
+      </div>
+      <a href="mailto:emmy.lamblindurosset@gmail.com" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- BLOC HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-container desktop-only">
+    <div class="hero-text">
+      <h1 class="hero-title">Enchantée !</h1>
+      <h2 class="hero-description">Je suis votre prochaine <br><span id="changing-word">social media</span> manager</h2>
+    </div>
+    <div class="hero-images">
+      <img src="assets/img/image-top.png" alt="Image 1" class="hero-img hero-top-img">
+      <img src="assets/img/image-bottom.png" alt="Image 2" class="hero-img hero-bottom-img">
+    </div>
+  </div>
+  <div class="hero-container mobile-only">
+    <h1 class="hero-title">Enchantée !</h1>
+    <img src="assets/img/image-top.png" alt="Image mobile" class="hero-img">
+    <h2 class="hero-description">Je suis votre prochaine <br><span id="changing-word">social media</span> manager</h2>
+  </div>
+</section>
+
+
+<!-- BLOC QUI SUIS-JE -->
+<section class="qui-suis-je" id="qui-suis-je">
+  <div class="bio-part desktop-only">
+    <div class="container">
+      <div class="bio-images">
+        <img src="assets/img/photo-profil.png" alt="Photo de profil" class="bio-img single-img">
+      </div>
+      <div class="text-group">
+        <h2 class="title">Qui suis-je ?</h2>
+        <p class="description">
+          Je m’appelle Emmy, je suis diplômée d’une licence en information et communication et d’un Master 1 en communication globale et stratégie d’influence.<br>
+          Passionnée par la nature, la littérature, la photographie et les arts, j’ai à cœur de créer, d’explorer et de transmettre, que ce soit par l’image, par la voix ou par l’écrit. Je suis une personne curieuse, engagée, créative et capable de m’adapter à des environnements variés avec aisance. <br>
+          J’aime capturer la beauté de l’instant avec mon appareil photo, raconter des histoires à travers mon podcast et partager mes passions avec authenticité. Mon objectif est de rendre ce que j’aime accessible aux autres, de créer des contenus qui ont du sens et qui permettent de découvrir le monde avec un regard plus attentif, plus curieux et plus émerveillé.<br>
+          Au quotidien, je m’épanouis dans les projets qui me permettent de conjuguer ma créativité et mon sens de la stratégie, tout en mettant l’humain et la transmission au cœur de mes actions.<br>
+          À la suite de problèmes de santé qui ont impacté mon parcours, aujourd’hui guérie, je suis plus motivée que jamais pour faire preuve de résilience et relever de nouveaux défis.
+        </p>
+        <div class="btn-wrapper-bio">
+          <a href="assets/cv/CV Emmy Lamblin-Durosset.pdf" class="btn-outlineblanc-fondvert" target="_blank" rel="noopener noreferrer">
+            Découvrir mon CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bio-part mobile-only">
+    <div class="container">
+      <h2 class="title">Qui suis-je ?</h2>
+      <div class="bio-images">
+        <img src="assets/img/photo-profil.png" alt="Photo de profil" class="bio-img single-img">
+      </div>
+      <div class="text-group">
+        <p class="description">
+          Je m’appelle Emmy, je suis diplômée d’une licence en information et communication et d’un Master 1 en communication globale et stratégie d’influence.<br>
+          <br>
+          Passionnée par la nature, la littérature, la photographie et les arts, j’ai à cœur de créer, d’explorer et de transmettre, que ce soit par l’image, par la voix ou par l’écrit. Je suis une personne curieuse, engagée, créative et capable de m’adapter à des environnements variés avec aisance.<br>
+          <br>
+          J’aime capturer la beauté de l’instant avec mon appareil photo, raconter des histoires à travers mon podcast et partager mes passions avec authenticité. Mon objectif est de rendre ce que j’aime accessible aux autres, de créer des contenus qui ont du sens et qui permettent de découvrir le monde avec un regard plus attentif, plus curieux et plus émerveillé.<br>
+          <br>
+          Au quotidien, je m’épanouis dans les projets qui me permettent de conjuguer ma créativité et mon sens de la stratégie, tout en mettant l’humain et la transmission au cœur de mes actions.<br>
+          <br>
+          À la suite de problèmes de santé qui ont impacté mon parcours, aujourd’hui guérie, je suis plus motivée que jamais pour faire preuve de résilience et relever de nouveaux défis.
+        </p>
+        <div class="btn-wrapper-bio">
+          <a href="assets/cv/CV Emmy Lamblin-Durosset.pdf" class="btn-outlineblanc-fondvert" target="_blank" rel="noopener noreferrer">
+            Découvrir mon CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BLOC PORTFOLIO -->
+<section class="portfolio-title-section" id="portfolio" >
+  <div class="portfolio-title-container">
+    <h2 class="portfolio-title">Portfolio</h2>
+  </div>
+</section>
+
+
+<!-- BLOC PODCAST -->
+<section class="podcast" id="podcast">
+  <div class="podcast-container desktop-only">
+    <div class="podcast-left-text">
+      <span class="eyebrow-podcast">PODCAST</span>
+      <h2 class="title-podcast">Regard d'Art</h2>
+      <p class="description-podcast">
+        Regard d’Art est né d’une conviction : rendre l’art accessible à chacun, quelle que soit son histoire ou son parcours.
+        Depuis que j’ai découvert l’art au lycée grâce à un professeur passionné, cela fait partie de mon quotidien. Pour moi, la richesse de l’art réside aussi dans le fait de développer l’ouverture d’esprit, d’aiguiser le sens critique et de nourrir la créativité, des valeurs qui me tiennent à cœur.
+        À travers ce podcast, je propose des clés pour découvrir les œuvres et la vie des artistes, en toute simplicité, afin d’inviter chacun à nourrir sa curiosité, à s’émerveiller, à prendre le temps de regarder autrement ce qui nous entoure.
+      </p>
+      <div class="podcast-buttons-wrapper">
+        <div class="podcast-buttons">
+          <a href="https://www.instagram.com/regarddart/" class="btn-outlineblanc-fondvertfoncé" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/company/regard-d-art/" class="btn-outlineblanc-fondvertfoncé" target="_blank">LinkedIn</a>
+          <a href="https://podcast.ausha.co/regard-d-art" class="btn-outlineblanc-fondvertfoncé" target="_blank">Site internet</a>
+        </div>
+      </div>
+    </div>
+    <div class="podcast-right-widget">
+      <iframe 
+        name="Ausha Podcast Player" 
+        frameborder="0" 
+        loading="lazy" 
+        id="ausha-kw1h" 
+        src="https://player.ausha.co/?showId=030DeSJ6YaRQ&color=%23073A33&playlist=true&v=3&playerId=ausha-kw1h"
+        title="Lecteur du podcast Regard d'Art"
+        lang="fr">
+      </iframe>
+      <script src="https://player.ausha.co/ausha-player.js"></script>
+    </div>
+  </div>
+  <div class="podcast-container mobile-only">
+    <span class="eyebrow-podcast">PODCAST</span>
+    <h2 class="title-podcast">Regard d'Art</h2>
+    <div class="podcast-right-widget">
+      <iframe 
+        name="Ausha Podcast Player" 
+        frameborder="0" 
+        loading="lazy" 
+        id="ausha-kw1h-mobile" 
+        src="https://player.ausha.co/?showId=030DeSJ6YaRQ&color=%23073A33&playlist=true&v=3&playerId=ausha-kw1h"
+        title="Lecteur du podcast Regard d'Art"
+        lang="fr">
+      </iframe>
+      <script src="https://player.ausha.co/ausha-player.js"></script>
+    </div>
+    <p class="description-podcast">
+      Regard d’Art est né d’une conviction : rendre l’art accessible à chacun, quelle que soit son histoire ou son parcours.
+      Depuis que j’ai découvert l’art au lycée grâce à un professeur passionné, cela fait partie de mon quotidien. Pour moi, la richesse de l’art réside aussi dans le fait de développer l’ouverture d’esprit, d’aiguiser le sens critique et de nourrir la créativité, des valeurs qui me tiennent à cœur.<br>
+      <br>
+      À travers ce podcast, je propose des clés pour découvrir les œuvres et la vie des artistes, en toute simplicité, afin d’inviter chacun à nourrir sa curiosité, à s’émerveiller, à prendre le temps de regarder autrement ce qui nous entoure.
+    </p>
+    <div class="podcast-buttons-wrapper">
+      <div class="podcast-buttons">
+        <a href="https://www.instagram.com/regarddart/" class="btn-outlineblanc-fondvertfoncé" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/company/regard-d-art/" class="btn-outlineblanc-fondvertfoncé" target="_blank">LinkedIn</a>
+        <a href="https://podcast.ausha.co/regard-d-art" class="btn-outlineblanc-fondvertfoncé" target="_blank">Site internet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BLOC PHOTOGRAPHIES -->
+<section class="photographie-slider-section" id="photographies">
+  <div class="photographie-container desktop-only">
+    <div class="photographie-left">
+      <p class="slider-label">PASSION</p>
+      <h2 class="slider-title">Photographies</h2>
+      <p class="slider-description">
+        À 16 ans, j’ai acheté mon premier appareil avec mon premier salaire de saisonnière. Depuis, la photographie est devenue pour moi un moyen d’expression, mais également une manière de déconnecter, de me retrouver dans la nature et de prendre une pause le temps d’un instant.
+        J’aime capturer des regards, des moments de vie, des paysages, des détails qui passent souvent inaperçus au premier abord, si l’on ne prend pas le temps de s’arrêter et de vraiment regarder ce qui nous entoure.
+        La photo me permet humblement, de raconter des histoires, de faire ressentir des émotions et de partager ma vision du monde, avec simplicité et sincérité.
+      </p>
+      <div class="photographie-btn-container">
+        <a href="https://www.instagram.com/emmyld.studio/" class="btn-outlinevert-fondblanc" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div class="photographie-right">
+      <div class="image-slider" id="portfolio-slider-desktop">
+        <a href="https://www.instagram.com/p/DGqdgn0i2cg/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo1.png" alt="Photo 1">
+        </a>
+        <a href="https://www.instagram.com/p/DB1pxDNiLH2/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo2.png" alt="Photo 2">
+        </a>
+        <a href="https://www.instagram.com/p/DB7njFTCTes/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo3.png" alt="Photo 3">
+        </a>
+        <a href="https://www.instagram.com/p/DEvpWhVCX5K/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo4.png" alt="Photo 4">
+        </a>
+        <a href="https://www.instagram.com/p/DG0eWt0CsEw/?img_index=1" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo5.png" alt="Photo 5">
+        </a>
+        <a href="https://www.instagram.com/p/DG0dYRDiH0G/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo6.png" alt="Photo 6">
+        </a>
+        <a href="https://www.instagram.com/p/DEvpgAvCSVk/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo7.png" alt="Photo 7">
+        </a>
+        <a href="https://www.instagram.com/p/DEvpvH-C8kx/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo8.png" alt="Photo 8">
+        </a>
+        <a href="https://www.instagram.com/p/DGdEGE8ifbf/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo9.png" alt="Photo 9">
+        </a>
+        <a href="https://www.instagram.com/p/DLX3N3yCynV/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo10.png" alt="Photo 10">
+        </a>
+        <a href="https://www.instagram.com/p/DLX1BYvCZdZ/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo11.png" alt="Photo 11">
+        </a>
+        <a href="https://www.instagram.com/p/DLX0QYmCWMi/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo12.png" alt="Photo 12">
+        </a>
+      </div>
+      <div class="slider-buttons">
+        <button class="slider-arrow left" id="prev-portfolio-desktop">❮</button>
+        <button class="slider-arrow right" id="next-portfolio-desktop">❯</button>
+      </div>
+    </div>
+  </div>
+  <div class="photographie-container mobile-only">
+    <div class="photographie-left">
+      <p class="slider-label">PASSION</p>
+      <h2 class="slider-title">Photographies</h2>
+    </div>
+    <div class="photographie-right">
+      <div class="image-slider" id="portfolio-slider-mobile">
+        <a href="https://www.instagram.com/p/DGqdgn0i2cg/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo1.png" alt="Photo 1">
+        </a>
+        <a href="https://www.instagram.com/p/DB1pxDNiLH2/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo2.png" alt="Photo 2">
+        </a>
+        <a href="https://www.instagram.com/p/DB7njFTCTes/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo3.png" alt="Photo 3">
+        </a>
+        <a href="https://www.instagram.com/p/DEvpWhVCX5K/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo4.png" alt="Photo 4">
+        </a>
+        <a href="https://www.instagram.com/p/DG0eWt0CsEw/?img_index=1" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo5.png" alt="Photo 5">
+        </a>
+        <a href="https://www.instagram.com/p/DG0dYRDiH0G/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo6.png" alt="Photo 6">
+        </a>
+        <a href="https://www.instagram.com/p/DEvpgAvCSVk/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo7.png" alt="Photo 7">
+        </a>
+        <a href="https://www.instagram.com/p/DEvpvH-C8kx/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo8.png" alt="Photo 8">
+        </a>
+        <a href="https://www.instagram.com/p/DGdEGE8ifbf/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo9.png" alt="Photo 9">
+        </a>
+        <a href="https://www.instagram.com/p/DLX3N3yCynV/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo10.png" alt="Photo 10">
+        </a>
+        <a href="https://www.instagram.com/p/DLX1BYvCZdZ/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo11.png" alt="Photo 11">
+        </a>
+        <a href="https://www.instagram.com/p/DLX0QYmCWMi/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/photographies/photo12.png" alt="Photo 12">
+        </a>
+      </div>
+      <div class="slider-buttons">
+        <button class="slider-arrow left" id="prev-portfolio-mobile">❮</button>
+        <button class="slider-arrow right" id="next-portfolio-mobile">❯</button>
+      </div>
+    </div>
+    <div class="photographie-left">
+      <p class="slider-description">
+        À 16 ans, j’ai acheté mon premier appareil avec mon premier salaire de saisonnière. Depuis, la photographie est devenue pour moi un moyen d’expression, mais également une manière de déconnecter, de me retrouver dans la nature et de prendre une pause le temps d’un instant.<br>
+        <br>
+        J’aime capturer des regards, des moments de vie, des paysages, des détails qui passent souvent inaperçus au premier abord, si l’on ne prend pas le temps de s’arrêter et de vraiment regarder ce qui nous entoure.
+        La photo me permet humblement, de raconter des histoires, de faire ressentir des émotions et de partager ma vision du monde, avec simplicité et sincérité.
+      </p>
+      <div class="photographie-btn-container">
+        <a href="https://www.instagram.com/emmyld.studio/" class="btn-outlinevert-fondblanc" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BLOC CONTACT -->
+<section class="contact-block" id="contact">
+  <div class="overlay">
+    <h2 class="title-contact">Prenons contact !</h2>
+    <p class="mail-contact">
+      emmy.lamblindurosset@gmail.com
+    </p>
+    <a href="https://www.linkedin.com/in/emmy-lamblin-durosset/" class="btn-outlinewhite-onpicture" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</section>
+
+
+<!-- BOUTON SCROLL HAUT / BAS -->
+<button id="scroll-toggle" aria-label="Aller en bas" class="scroll-button">
+</button>
+
+
+<!-- REDIRECTION VERS LES SCRIPTS -->
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

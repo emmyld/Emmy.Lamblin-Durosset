@@ -1,0 +1,100 @@
+/* =================================================================
+Ce site a été réalisé à l'aide de connaissances personnelles et 
+non professionnelles en développement web.
+================================================================= */
+
+
+/* -------------------------
+VARIABLES GLOBALES : COULEURS ET POLICES
+------------------------- */
+:root {
+  --light-green: #70927f;
+  --dark-green: #073A33;
+  --white: #ffffff;
+  --text-color: #000000;
+  --font-primary: 'Inter', sans-serif;
+}
+
+
+/* -------------------------
+RESET DE BASE
+------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+scroll-margin-top: 55px;
+}
+
+
+/* -------------------------
+BASE DU CORPS DE PAGE
+------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: var(--white);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+
+/* -------------------------
+LIENS GLOBAUX
+------------------------- */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* -------------------------
+RESPONSIVE - STYLES GLOBAUX
+------------------------- */
+@media screen and (max-width: 768px) {
+  
+html {
+ font-size: 15px;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container, .hero-container, .bio-part .container,
+.portfolio-title-container, .podcast-container,
+.photographie-container {
+  flex-direction: column !important;
+  text-align: center;
+  align-items: center !important;
+  gap: 2rem !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a[class*="btn-"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 15px;
+}
+
+section {
+  padding: 0 0 !important;
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
+}
