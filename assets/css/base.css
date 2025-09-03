@@ -71,7 +71,7 @@ p {
 }
 
 .container, .hero-container, .bio-part .container,
-.portfolio-title-container, .podcast-container,
+.projets-title-container, .podcast-container,
 .photographie-container {
   flex-direction: column !important;
   text-align: center;
