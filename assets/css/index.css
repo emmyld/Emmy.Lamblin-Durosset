@@ -335,18 +335,159 @@ BLOC QUI SUIS-JE
 BLOC PORTFOLIO
 ------------------------- */
 
-.portfolio-title-section {
-  background-color: white;
-  padding: 4rem 2rem 3rem;
-  text-align: center;
+.portfolio-section {
+  padding: 3rem 1rem 0 1rem;
 }
 
-.portfolio-title-container {
-  max-width: 900px;
+.portfolio-container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .portfolio-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #073A33;
+}
+
+.portfolio-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: #073A33;
+}
+
+.portfolio-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* SOCIAL MEDIA */
+.portfolio-left {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-left .portfolio-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #073A33;
+}
+
+.pdf-preview {
+  width: calc(100% - 2rem);
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.pdf-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.portfolio-left .btn-outlineblanc-fondvert {
+  font-size: 15px; 
+  font-weight: 600;
+}
+
+/* JOURNALISME */
+.portfolio-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.portfolio-right .portfolio-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #073A33;
+}
+
+.journalisme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.journalisme-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.journalisme-grid img:hover {
+  transform: scale(1.05);
+}
+
+.journalisme-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-outlinedoré-fondblanc {
+  border: 1.5px solid #ceb595;
+  background-color: transparent;
+  color: #ceb595;
+  padding: 0.75rem 2rem;
+  font-size: 15px; 
+  font-weight: 600;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outlinedoré-fondblanc:hover {
+  background-color: #ceb595;
+  color: white;
+  text-decoration: none;
+}
+
+.journalisme-item a.btn-outlinedoré-fondblanc {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+
+/* -------------------------
+BLOC PROJETS
+------------------------- */
+
+.projets-title-section {
+  background-color: white;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+
+.projets-title-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projets-title {
   font-size: 30px;
   font-weight: 700;
   color: #073A33;
@@ -470,7 +611,7 @@ BLOC PHOTOGRAPHIES
 
 .photographie-slider-section {
   background-color: white;
-  padding: 1rem 4rem 4rem 4rem;
+  padding: 1rem 4rem 3rem 4rem;
 }
 
 .photographie-container.mobile-only {
@@ -513,8 +654,23 @@ BLOC PHOTOGRAPHIES
 .photographie-left .slider-description {
   font-size: 15px;
   line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #073A33;
+}
+
+.photographie-left .btn-slider-link {
+  display: inline-block;
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
   margin-bottom: 2rem;
   text-align: justify;
+  color: #70927f;
+}
+
+.photographie-left .btn-slider-link:hover {
   color: #073A33;
 }
 
@@ -856,14 +1012,14 @@ RESPONSIVE - NAVBAR
   align-self: flex-start;
 }
 
-.portfolio-mobile .portfolio-title {
+.projets-mobile .projets-title {
   font-size: 16px;
   font-weight: 500;
   color: #000;
   text-align: left;
 }
 
-.portfolio-mobile .sub-link {
+.projets-mobile .sub-link {
   font-size: 15px;
   font-weight: 500;
   color: #000;
@@ -938,7 +1094,7 @@ RESPONSIVE - BLOC QUI SUIS-JE
   color: #FFFBF6;
   width: 100%;
   padding: 1rem 1rem 2rem 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .bio-part.mobile-only .container {
@@ -990,11 +1146,55 @@ RESPONSIVE - BLOC QUI SUIS-JE
 RESPONSIVE - BLOC PORTFOLIO
 ------------------------- */
 
-.portfolio-title-container {
+.portfolio-columns {
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-container {
+  padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
 }
 
 .portfolio-title {
+  font-size: 26px !important;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.portfolio-left, .portfolio-right {
+  width: 100%;
+}
+
+.portfolio-subtitle {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+}
+
+.portfolio-description {
+  padding: 0 1rem;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #073A33;
+}
+
+.pdf-preview {
+  margin-bottom: 1.5rem;
+}
+
+
+/* -------------------------
+RESPONSIVE - BLOC PROJETS
+------------------------- */
+
+.projets-title-container {
+  margin-bottom: 2rem;
+}
+
+.projets-title {
   font-size: 26px;
   font-weight: 700;
 }
@@ -1085,7 +1285,7 @@ RESPONSIVE - BLOC PHOTOGRAPHIES
   align-items: center;
   padding: 1rem 0 2rem 0 !important;
   margin: 0 !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
   text-align: center;
   gap: 0 !important;
 }
@@ -1150,6 +1350,10 @@ RESPONSIVE - BLOC PHOTOGRAPHIES
   padding: 0 1rem !important;
   color: #073A33;
   margin-bottom: 2rem;
+}
+
+.photographie-left .btn-slider-link {
+  margin-bottom: 1rem;
 }
 
 .photographie-btn-container {
