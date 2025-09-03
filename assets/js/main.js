@@ -79,7 +79,7 @@ window.addEventListener("load", updateActiveLink);
 
 
 /* -------------------------
-NAVBAR ACTIVE - DROPDOWN "PORTFOLIO"
+NAVBAR ACTIVE + DROPDOWN "PROJETS"
 ------------------------- */
 window.addEventListener('scroll', function () {
   const scrollY = window.scrollY;
@@ -88,12 +88,13 @@ window.addEventListener('scroll', function () {
   const sections = [
     { id: 'accueil', linkIds: ['link-accueil'] },
     { id: 'qui-suis-je', linkIds: ['link-quisuisje'] },
-    { id: 'portfolio', linkIds: ['portfolio-link-desktop', 'portfolio-link-mobile'] },
-    { id: 'podcast', linkIds: ['link-podcast', 'link-podcast-mobile', 'portfolio-link-desktop', 'portfolio-link-mobile'] },
-    { id: 'photographies', linkIds: ['link-photographies', 'link-photographies-mobile', 'portfolio-link-desktop', 'portfolio-link-mobile'] },
+    { id: 'portfolio', linkIds: ['link-portfolio'] },
+    { id: 'projets', linkIds: ['projets-link-desktop', 'projets-link-mobile'] },
+    { id: 'podcast', linkIds: ['link-podcast', 'link-podcast-mobile', 'projets-link-desktop', 'projets-link-mobile'] },
+    { id: 'photographies', linkIds: ['link-photographies', 'link-photographies-mobile', 'projets-link-desktop', 'projets-link-mobile'] },
   ];
 
-  document.querySelectorAll('.nav-links a, .portfolio-title').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nav-links a, .projets-title').forEach(el => el.classList.remove('active'));
 
   for (let section of sections) {
     const elem = document.getElementById(section.id);
@@ -164,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
  MOT DYNAMIQUE DANS LE HERO
 ------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
-  const words = ["social media", "content", "influence"];
+  const words = ["social media manager", "content manager", "influence manager", "cheffe de projets"];
   let i = 0;
 
   const spanDesktop = document.querySelector(".desktop-only #changing-word");
@@ -186,9 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const isMobile = window.innerWidth <= 991;
 
-  const slider = document.getElementById(isMobile ? "portfolio-slider-mobile" : "portfolio-slider-desktop");
-  const btnPrev = document.getElementById(isMobile ? "prev-portfolio-mobile" : "prev-portfolio-desktop");
-  const btnNext = document.getElementById(isMobile ? "next-portfolio-mobile" : "next-portfolio-desktop");
+  const slider = document.getElementById(isMobile ? "projets-slider-mobile" : "projets-slider-desktop");
+  const btnPrev = document.getElementById(isMobile ? "prev-projets-mobile" : "prev-projets-desktop");
+  const btnNext = document.getElementById(isMobile ? "next-projets-mobile" : "next-projets-desktop");
 
   const slideStep = isMobile ? 228 : 261;
   const photoIndexToCenter = isMobile ? 5 : 5;
